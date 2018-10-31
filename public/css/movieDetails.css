@@ -1,0 +1,33 @@
+.content {
+  margin: 0 auto;
+  width: 897px;
+  margin-bottom: 100px;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  width: 897px;
+  height: 60px;
+  border-bottom: 1px solid #cacaca;
+  text-align: left;
+}
+
+h3 {
+  display: inline-block;
+  width: 897px;
+  height: 40px;
+  color: #007722;
+  border-bottom: 1px solid #cacaca;
+  text-align: left;
+}
+
+p {
+  text-align: left;
+}
+
+ul {
+  margin-top: 0;
+  width: 150px;
+  text-align: left;
+}
