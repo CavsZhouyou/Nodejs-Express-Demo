@@ -1,0 +1,31 @@
+.content {
+  margin: 0 auto;
+  width: 1000px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+
+ul {
+  list-style: none;
+}
+
+li {
+  margin-bottom: 50px;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:visited {
+  color: black
+}
+
+a:hover {
+  color: dodgerblue;
+}

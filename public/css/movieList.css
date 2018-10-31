@@ -1,0 +1,49 @@
+.content {
+  margin: 0 auto;
+  width: 897px;
+  text-align: center;
+}
+
+h1 {
+  display: inline-block;
+  width: 897px;
+  height: 60px;
+  border-bottom: 1px solid #cacaca;
+  text-align: left;
+}
+
+.movie-container {
+  width: 915px;
+  margin-left: -25px;
+  height: auto;
+  clear: both;
+  text-align: left;
+}
+
+.movie-content {
+  display: inline-block;
+  margin-left: 25px;
+  width: 200px;
+  height: 400px;
+  font-size: 16px;
+  text-align: center;
+}
+
+img {
+  width: 200px;
+  height: 300px;
+  margin-bottom: 5px;
+}
+
+.view {
+  display: inline-block;
+  border: none;
+  margin-top: 5px;
+  width: 100px;
+  height: 25px;
+  background: #40a8c4;
+  color: #fff;
+  font-size: 14px;
+  line-height: 25px;
+  text-decoration: none;
+}
