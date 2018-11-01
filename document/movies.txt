@@ -1,0 +1,113 @@
+CREATE TABLE IF NOT EXISTS movie_time(
+   movie_id INT UNSIGNED NOT NULL,
+   show_date VARCHAR(50) NOT NULL,
+   show_time VARCHAR(50) NOT NULL,
+   PRIMARY KEY (movie_id,show_date,show_time)
+   )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+INSERT INTO movie_time
+(movie_id,show_date,show_time)
+VALUES
+(1,"2018-11-1","上午 10:30");
+
+CREATE TABLE IF NOT EXISTS movie_details(
+   movie_id INT UNSIGNED NOT NULL AUTO_INCREMENT,
+   movie_name VARCHAR(50) NOT NULL,
+   movie_img VARCHAR(100) NOT NULL,
+   movie_adult_price INT UNSIGNED NOT NULL,
+   movie_student_price INT UNSIGNED NOT NULL,
+   movie_description LONGTEXT NOT NULL,
+   PRIMARY KEY (movie_id)
+   )ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+1. "铁血战士 The Predator"  "../images/movie1.webp" 100 50 
+一艘宇宙飞船坠落地球，正在执行军事任务的狙击手奎因·麦肯纳（波伊德·霍布鲁克 饰演）恰好遭遇外星人并发生激战，侥幸逃脱的他捡到了外星人的装备并寄回了家想再做他用。传说这种被称为铁血战士的外星人曾数次光临地球，使用各种残忍的手段对人类进行猎杀游戏。而这一次，奎因的儿子罗里收到包裹后意外触发机关，引来了更强大的终极铁血士降临地球。而想要阻止其大开杀戒的却是一群问题士兵和一位生物科学家凯茜·布拉克（奥立薇娅·玛恩 饰演）。事情却远不像他们以为的那样简单，一场铁血、终极铁血与人类之间的三方猎杀大战正式拉响！
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("铁血战士 The Predator","../images/movie1.webp",100,50, "一艘宇宙飞船坠落地球，正在执行军事任务的狙击手奎因·麦肯纳（波伊德·霍布鲁克 饰演）恰好遭遇外星人并发生激战，侥幸逃脱的他捡到了外星人的装备并寄回了家想再做他用。传说这种被称为铁血战士的外星人曾数次光临地球，使用各种残忍的手段对人类进行猎杀游戏。而这一次，奎因的儿子罗里收到包裹后意外触发机关，引来了更强大的终极铁血士降临地球。而想要阻止其大开杀戒的却是一群问题士兵和一位生物科学家凯茜·布拉克（奥立薇娅·玛恩 饰演）。事情却远不像他们以为的那样简单，一场铁血、终极铁血与人类之间的三方猎杀大战正式拉响！");
+
+
+2. "黑暗迷宫" "../images/movie2.webp" 120 60 
+影片故事由一次旅途展开，七个互不相识的人，冥冥之中上了同一辆车。在车辆进入黑暗的隧道后，却永远开不到尽头。经过多种尝试，他们依然无法逃离。莫名出现的尸体，死而复生的故人以及突如其来的凶杀接踵而至。和这没有尽头的隧道一样恐怖的，是每个人在黑暗中逐渐暴露的人性……
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("黑暗迷宫","../images/movie2.webp",120,60,"影片故事由一次旅途展开，七个互不相识的人，冥冥之中上了同一辆车。在车辆进入黑暗的隧道后，却永远开不到尽头。经过多种尝试，他们依然无法逃离。莫名出现的尸体，死而复生的故人以及突如其来的凶杀接踵而至。和这没有尽头的隧道一样恐怖的，是每个人在黑暗中逐渐暴露的人性……")
+
+
+3. "昨日青空" "../images/movie3.webp" 150 75
+中国首部青春题材动画电影《昨日青空》将于2018年暑期全国上映。该片改编自口袋巧克力同名人气漫画作品，由咕咚导演奚超执导。影片以中国南方小镇兰溪为实际取景地，讲述了小镇上的几位高三学生，有关梦想、友谊、亲情和初恋等的成长经历，描绘出一段极具中国风、清新唯美的青春故事。
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("昨日青空","../images/movie3.webp",150,75,"中国首部青春题材动画电影《昨日青空》将于2018年暑期全国上映。该片改编自口袋巧克力同名人气漫画作品，由咕咚导演奚超执导。影片以中国南方小镇兰溪为实际取景地，讲述了小镇上的几位高三学生，有关梦想、友谊、亲情和初恋等的成长经历，描绘出一段极具中国风、清新唯美的青春故事。")
+
+4. "雪怪大冒险 Smallfoot" "../images/movie4.webp" 80 40 
+"《雪怪大冒险》是一部囊括巨星阵容及美妙原创音乐的全年龄段冒险动画片。当一只年轻活泼的雪人发现了之前本认为不存在的人类，大脚怪传奇自此乱了套。影片讲述了一个关乎友情、勇气与探索之趣的动人故事。关于人类这个“小脚怪”的消息让原本单纯的雪人族群陷入了骚乱之中，他们开始好奇，在雪村之外，究竟存在着一个怎样的世界？"
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("雪怪大冒险 Smallfoot","../images/movie4.webp",80,40, "《雪怪大冒险》是一部囊括巨星阵容及美妙原创音乐的全年龄段冒险动画片。当一只年轻活泼的雪人发现了之前本认为不存在的人类，大脚怪传奇自此乱了套。影片讲述了一个关乎友情、勇气与探索之趣的动人故事。关于人类这个“小脚怪”的消息让原本单纯的雪人族群陷入了骚乱之中，他们开始好奇，在雪村之外，究竟存在着一个怎样的世界？")
+
+5. "无双 無雙 (2018)" "../images/movie5.webp" 130 75
+"《无双》讲述了以代号“画家”（周润发 饰）为首的犯罪团伙，掌握了制造伪钞技术，难辨真伪，并在全球进行交易获取利益，引起警方高度重视。然而“画家”和其他成员的身份一直成谜，警方的破案进度遭受到了前所未有的挑战。在关键时刻，擅长绘画的李问（郭富城 饰）打开了破案的突破口，而“画家”的真实身份却让众人意想不到……"
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("无双 無雙 (2018)","../images/movie5.webp",130,75,"《无双》讲述了以代号“画家”（周润发 饰）为首的犯罪团伙，掌握了制造伪钞技术，难辨真伪，并在全球进行交易获取利益，引起警方高度重视。然而“画家”和其他成员的身份一直成谜，警方的破案进度遭受到了前所未有的挑战。在关键时刻，擅长绘画的李问（郭富城 饰）打开了破案的突破口，而“画家”的真实身份却让众人意想不到……")
+
+
+
+6. "找到你" "../images/movie6.webp" 100 50
+"律师李捷（姚晨 饰）正在离婚进行时，与前夫争夺女儿抚养权，拼命工作为给孩子最好的生活，幸有保姆孙芳（马伊琍 饰）帮忙照顾孩子视如己出。 一日下班，李捷发现保姆孙芳和女儿毫无预兆地消失了，她内心最大的恐惧变成了现实。在追寻孙芳和女儿的下落时，她收到来自家人的谴责声讨，甚至遭到警方的怀疑。几乎崩溃的李捷，靠着惊人的勇气，踏上独自寻访的旅 程。在追踪过程中，李捷逐渐接近了另一个女人——保姆孙芳的人生故事，她的身份原先都是谎言，而真相也将浮出水面……"
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("找到你","../images/movie6.webp",100,50,"律师李捷（姚晨 饰）正在离婚进行时，与前夫争夺女儿抚养权，拼命工作为给孩子最好的生活，幸有保姆孙芳（马伊琍 饰）帮忙照顾孩子视如己出。 一日下班，李捷发现保姆孙芳和女儿毫无预兆地消失了，她内心最大的恐惧变成了现实。在追寻孙芳和女儿的下落时，她收到来自家人的谴责声讨，甚至遭到警方的怀疑。几乎崩溃的李捷，靠着惊人的勇气，踏上独自寻访的旅 程。在追踪过程中，李捷逐渐接近了另一个女人——保姆孙芳的人生故事，她的身份原先都是谎言，而真相也将浮出水面……");
+
+
+7. "影" "../images/movie7.webp" 120 60
+"纷乱时局，群敌环伺。一个从小被秘密囚禁的替身，不甘只做他人手中的武器；但若想冲破枷锁，找回自我，又必将历经千难万险的考验；替身能否寻回自由，他又该如何选择？"
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("影","../images/movie7.webp",120,60,"纷乱时局，群敌环伺。一个从小被秘密囚禁的替身，不甘只做他人手中的武器；但若想冲破枷锁，找回自我，又必将历经千难万险的考验；替身能否寻回自由，他又该如何选择？");
+
+8. "李茶的姑妈" "../images/movie8.webp" 100 50
+"《李茶的姑妈》改编自开心麻花同名爆笑舞台剧。李茶（宋阳 饰）是个穷小子，姑妈（卢靖姗 饰）却是全球女首富，自打李茶出生后二人便未曾谋面。为了娶到“势利眼富商”的女儿，李茶恳请姑妈出面牵线搭桥，可各怀鬼胎的一行人却误将男员工黄沧海（黄才伦 饰）认作姑妈。为了各自的利益，黄沧海、李茶连同梁杰瑞（艾伦 饰）三个人将计就计组团来“假扮姑妈”，正当众人纷纷讨好这位“假姑妈”时，神秘的“真姑妈”现身了，一连串的爆笑故事也发生了......"
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("李茶的姑妈","../images/movie8.webp",100,50,"《李茶的姑妈》改编自开心麻花同名爆笑舞台剧。李茶（宋阳 饰）是个穷小子，姑妈（卢靖姗 饰）却是全球女首富，自打李茶出生后二人便未曾谋面。为了娶到“势利眼富商”的女儿，李茶恳请姑妈出面牵线搭桥，可各怀鬼胎的一行人却误将男员工黄沧海（黄才伦 饰）认作姑妈。为了各自的利益，黄沧海、李茶连同梁杰瑞（艾伦 饰）三个人将计就计组团来“假扮姑妈”，正当众人纷纷讨好这位“假姑妈”时，神秘的“真姑妈”现身了，一连串的爆笑故事也发生了......");
+
+
+9. "功夫联盟" "../images/movie9.webp" 120 60
+"年轻漫画家费英雄，受到老板张鹏的打压，郁郁不得志。而他与张鹏却同时暗恋着公司女同事保儿。 机缘巧合之下，他正在执笔的新漫画《功夫联盟》中的四大武学宗师——黄师傅、霍大侠、陈阿真以及叶姓神秘人受到费英雄的召唤穿越时空来到了现代。 经历诸多磨难和命悬一线的对抗后，宗师们终于帮助英雄完成了梦想，而他们也都回到了属于自己的时代。"
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("功夫联盟","../images/movie9.webp",120,60,"年轻漫画家费英雄，受到老板张鹏的打压，郁郁不得志。而他与张鹏却同时暗恋着公司女同事保儿。 机缘巧合之下，他正在执笔的新漫画《功夫联盟》中的四大武学宗师——黄师傅、霍大侠、陈阿真以及叶姓神秘人受到费英雄的召唤穿越时空来到了现代。 经历诸多磨难和命悬一线的对抗后，宗师们终于帮助英雄完成了梦想，而他们也都回到了属于自己的时代。");
+
+
+10. "宝贝儿" "../images/movie10.webp" 130 65
+"《宝贝儿》是由侯孝贤监制、刘杰执导的纪实风格文艺片，讲述的是一个因为严重先天缺陷而被父母抛弃的弃儿江萌（杨幂 饰），拯救另一个被父母宣判了“死刑”的缺陷婴儿的故事。 "
+
+INSERT INTO movie_details
+(movie_name,movie_img,movie_adult_price,movie_student_price,movie_description)
+VALUES
+("宝贝儿","../images/movie10.webp",130,65,"《宝贝儿》是由侯孝贤监制、刘杰执导的纪实风格文艺片，讲述的是一个因为严重先天缺陷而被父母抛弃的弃儿江萌（杨幂 饰），拯救另一个被父母宣判了“死刑”的缺陷婴儿的故事。");
+
+
