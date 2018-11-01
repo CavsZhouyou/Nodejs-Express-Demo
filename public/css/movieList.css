@@ -12,7 +12,7 @@ h1 {
   text-align: left;
 }
 
-.movie-container {
+#movie-container {
   width: 915px;
   margin-left: -25px;
   height: auto;
