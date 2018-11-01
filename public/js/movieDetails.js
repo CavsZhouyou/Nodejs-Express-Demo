@@ -4,7 +4,7 @@
  * @TodoList: 无
  * @Date: 2018-11-01 17:23:20 
  * @Last Modified by: zhouyou@werun
- * @Last Modified time: 2018-11-01 17:47:36
+ * @Last Modified time: 2018-11-01 19:50:14
  */
 
 
@@ -75,7 +75,7 @@ function renderMovieTimeList(times = []) {
 
   times.forEach(time => {
     $("#movie-times").append(`
-    <li>${time.show_time}</li>
+    <li>${time.show_time || time}</li>
     `)
   })
 }
