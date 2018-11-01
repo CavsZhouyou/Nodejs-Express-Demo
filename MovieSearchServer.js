@@ -4,10 +4,11 @@
  * @TodoList: 无
  * @Date: 2018-11-01 16:25:14 
  * @Last Modified by: zhouyou@werun
- * @Last Modified time: 2018-11-01 20:13:57
+ * @Last Modified time: 2018-11-01 21:26:00
  */
 var express = require('express');
-var search = require('./lib/MovieSearch');
+var search = require('./lib/MovieSearchMySql.js');
+//var search = require('./lib/MovieSearchMongodb.js');
 var app = express();
 
 app.use(express.static('public'));
